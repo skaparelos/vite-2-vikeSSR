@@ -1,9 +1,9 @@
-# Step 1
+# Step 1: Init Vite
 $ pnpm create vite
 $ pnpm i
 
 
-# Step 2
+# Step 2: Vite to vike SSR
 
 ## vike.dev/vercel
 * pnpm i vike
@@ -23,3 +23,14 @@ $ pnpm i
 * add resolve in vite.config.js
 * pnpm i prop-types
 * enable ssr({ prerender: true })
+
+
+## Step 3: Vercel plugin for `pnpm run build`
+* pnpm i @vite-plugin-vercel/vike
+* pnpm i vite-plugin-vercel
+* rename api/ to _api/
+* pnpm run build
+* vercel deploy --prebuilt
+? What's your Build Command? pnpm run build
+? What's your Development Command? pnpm run dev
+? What's your Output Directory? dist/client
