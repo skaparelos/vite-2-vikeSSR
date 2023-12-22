@@ -1,6 +1,8 @@
+
+starting from vite, adding Vike, and deploying to vercel using `pnpm run build` & `vercel deploy --prebuilt`
 # Step 1: Init Vite
-$ pnpm create vite
-$ pnpm i
+* $ pnpm create vite
+* $ pnpm i
 
 
 # Step 2: Vite to vike SSR
